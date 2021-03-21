@@ -5,99 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Главная</a>
-          </li>
-          <li>
-            <a href="./html/projects.html">Наши проекты</a>
-          </li>
-          <li>
-            <a href="./html/services.html">Услуги</a>
-          </li>
-          <li>
-            <a href="">Новости</a>
-          </li>
-          <li>
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/projects.html">Наши проекты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
-      <section>
-        <h1>Передовая IT студия</h1>
-        <p>Мы создаем легкие решения сложных задач и проблем</p>
-        <a href="">Наши проекты</a>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Передовая IT студия</h1>
+          <p class="hero-descr">
+            Мы создаем легкие решения сложных задач и проблем
+          </p>
+          <a class="btn" href="">Наши проекты</a>
+        </div>
       </section>
-      <section>
-        <h2>Мы создаем мобильные приложения для крупных корпораций</h2>
-        <p>
-          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-          латинице с начала XVI века.
-        </p>
-        <ul>
-          <li>
-            <h3>Создание сайтов</h3>
-            <p>
-              Lorem Ipsum - это текст- "рыба", часто используе в печати и
-              вэб-дизайне.
-            </p>
-          </li>
-          <li>
-            <h3>Создание сайтов</h3>
-            <p>
-              Lorem Ipsum - это текст- "рыба", часто используе в печати и
-              вэб-дизайне.
-            </p>
-          </li>
-          <li>
-            <h3>Создание сайтов</h3>
-            <p>
-              Lorem Ipsum - это текст- "рыба", часто используе в печати и
-              вэб-дизайне.
-            </p>
-          </li>
-        </ul>
-        <a href="">Все услуги</a>
+      <section class="create">
+        <div class="container">
+          <h2 class="create-title">
+            Мы создаем мобильные приложения для крупных корпораций
+          </h2>
+          <p class="create-descr">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века.
+          </p>
+          <ul class="create-list">
+            <li class="create-item">
+              <div class="out">
+                <div class="in">
+                  <img src="./images/svg/create-icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="create-group">
+                <h3>Создание сайтов</h3>
+                <p>
+                  Lorem Ipsum - это текст- "рыба", часто используе в печати и
+                  вэб-дизайне.
+                </p>
+              </div>
+            </li>
+            <li class="create-item">
+              <div class="out">
+                <div class="in">
+                  <img src="./images/svg/create-icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="create-group">
+                <h3>Создание сайтов</h3>
+                <p>
+                  Lorem Ipsum - это текст- "рыба", часто используе в печати и
+                  вэб-дизайне.
+                </p>
+              </div>
+            </li>
+            <li class="create-item">
+              <div class="out">
+                <div class="in">
+                  <img src="./images/svg/create-icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="create-group">
+                <h3>Создание сайтов</h3>
+                <p>
+                  Lorem Ipsum - это текст- "рыба", часто используе в печати и
+                  вэб-дизайне.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a class="btn" href="">Все услуги</a>
+        </div>
       </section>
-      <section>
-        <h2>Высокие стандарты разработки</h2>
-        <p>
-          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-          латинице с начала XVI века. стандартной "рыбой" для текстов на
-          латинице с начала XVI века.
-        </p>
-        <a href="">Подробнее о компании</a>
-        <ul>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
+      <section class="standarts">
+        <div class="container">
+          <h2 class="standarts-title">Высокие стандарты разработки</h2>
+          <p class="standarts-descr">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века. стандартной "рыбой" для текстов на
+            латинице с начала XVI века.
+          </p>
+          <a class="standarts-link" href="">Подробнее о компании</a>
+          <ul class="standarts-list">
+            <li class="standarts-item">
+              <p>125</p>
+              <p>Our projects</p>
+            </li>
+            <li class="standarts-item">
+              <p>125</p>
+              <p>Our projects</p>
+            </li>
+            <li class="standarts-item">
+              <p>125</p>
+              <p>Our projects</p>
+            </li>
+            <li class="standarts-item">
+              <p>125</p>
+              <p>Our projects</p>
           </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-        </ul>
+            <li class="standarts-item">
+              <p>125</p>
+              <p>Our projects</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <h2>Наши работы, на которых мы специализируемся</h2>
