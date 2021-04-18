@@ -1,0 +1,39 @@
+.hero {
+  padding-top: 319px;
+  padding-bottom: 335px;
+  background-color: #212121;
+  text-align: center;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+
+  &__title {
+    margin-bottom: 20px;
+    @include main_font(16px, 20px, $main-light-color);
+  }
+
+  &__descr {
+    width: 829px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+
+    @include main_font(48px, 64px, $main-light-color, 800);
+  }
+}
+
+.hero__btn-link {
+  @extend %button;
+  background-color: red;
+  color: black;
+}
+
+.container-fn-tabl {
+  width: grid-width(4, 30px, 1170px);
+}
+
+@media (min-width: 768px) {
+  .container-fn-tabl {
+    width: grid-width(2, 20px, 800px);
+  }
+}

@@ -1,0 +1,15 @@
+@import "./utils/vars";
+@import "./utils/fonts";
+@import "./base/regs";
+@import "./utils/vissualy-hidden";
+@import "./utils/mixins";
+@import "./utils/funcs";
+@import "./utils/placeholders";
+
+
+@import "./base/container";
+@import "./base/layouts";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/create";
+@import "./components/standarts";

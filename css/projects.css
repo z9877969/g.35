@@ -1,0 +1,120 @@
+:root {
+    --main-light-color: #ffffff;
+    --accent-color: #4985ff;
+    --main-dark-color: #323232;
+    --secondary-dark-color: #000000;
+    --text-color: #999999;
+    --main-font: "Montserrat", sans-serif;
+  
+    /* --animate-duration: 800ms;
+    --animate-delay: 5s; */
+  }
+  
+  body {
+    font-family: var(--main-font);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+  
+  .container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  header {
+    position: absolute;
+    /* top: 100px; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-bottom: 1px solid #A1A1A1;
+  }
+  
+  header::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    opacity: 0.5;
+    background-color: #a1a1a1;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 39px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-light-color);
+  }
+  
+  /* .nav-link {
+  
+    animation: bounce; 
+    animation-duration: 2s;
+    
+  } */
+  
+  .nav-link:hover {
+    /* animation: wobble;
+    animation-duration: 2s; */
+    color: red;
+  }
+  
+  /* .nav-link:nth-child(1) {
+    animation-delay: var(--animate-delay);
+  }
+  
+  .nav-link:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .nav-link:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  .nav-link:nth-child(4) {
+    animation-delay: 2s;
+  }
+  
+  .nav-link:nth-child(5) {
+    animation-delay: 2.5s;
+  } */
+  
+  .nav-link-accent::after {
+    display: block;
+    content: "";
+    width: calc(100% + 40px);
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(40px);
+    transform: translateX(-20px);
+    transform: translate(-20px, 39px);
+  }

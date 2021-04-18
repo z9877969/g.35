@@ -1,0 +1,29 @@
+.standarts-descr {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 25px;
+  color: $text-color;
+}
+
+.standarts-link {
+  @include main_font(16px, 1.2, $accent-color, 700);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 20px;
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.standarts-item p:first-child {
+  font-size: 36px;
+  line-height: 53px;
+  color: $secondary-dark-color;
+}
+
+.standarts-item p:last-child {
+  font-size: 16px;
+  line-height: 25px;
+  color: $text-color;
+}
+
+@include selector("#type", background-color, blACK)

@@ -1,0 +1,98 @@
+.create {
+  padding-top: 110px;
+  padding-bottom: 105px;
+  text-align: center;
+}
+
+.create-title {
+  width: 739px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  color: $main-dark-color;
+}
+
+.create-descr {
+  width: 730px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: $text-color;
+}
+
+.create-list {
+  display: flex;
+  margin-bottom: 55px;
+  text-align: left;
+}
+
+.create-item {
+  display: flex;
+}
+
+.create-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.out {
+  width: 110px;
+  height: 110px;
+  margin-right: 16px;
+  border: 1px solid $text-color;
+}
+
+.in {
+  width: 90px;
+  height: 90px;
+  border: 1px solid $accent-color;
+}
+
+.out,
+.in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.create-group {
+  width: 222px;
+  padding-top: 44px;
+}
+
+.create-item h3 {
+  margin-bottom: 12px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $secondary-dark-color;
+}
+
+.create-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $text-color;
+}
+
+// @each $animal, $color, $cursor in (puma, black, default),
+//   (sea-slug, blue, pointer), (egret, white, move)
+// {
+//   .#{$animal}-icon {
+//     background-image: url("/images/#{$animal}.png");
+//     border: 2px solid $color;
+//     cursor: $cursor;
+//   }
+// }
+
+@each $child, $color in (1, black), (2, blue), (3, red) {
+  .create-item:nth-child(#{$child}) h3 {
+    color: $color;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin main_font($f_sz, $l_h, $color, $f_w: 500) {
+  font-weight: $f_w;
+  font-size: $f_sz;
+  line-height: $l_h;
+  color: $color;
+}
+
+@mixin selector(
+  $sel,
+  $prop,
+  $val
+) {
+  #{$sel} {
+    #{$prop}: $val;
+  }
+}
+
+@mixin flex($jc: flex-start, $ai: stretch) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+
+
